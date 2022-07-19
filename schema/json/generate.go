@@ -47,6 +47,7 @@ type artifactMetadataContainer struct {
 	KbPackage     pkg.KbPackageMetadata
 	Hackage       pkg.HackageMetadata
 	SwiftCocopods pkg.CocoapodsMetadata
+	Nix           pkg.NixStoreMetadata
 }
 
 func main() {

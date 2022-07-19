@@ -15,6 +15,7 @@ const (
 	AlpmMetadataType             MetadataType = "AlpmMetadata"
 	BinaryMetadataType           MetadataType = "BinaryMetadata"
 	DpkgMetadataType             MetadataType = "DpkgMetadata"
+	NixStoreMetadataType         MetadataType = "NixStoreMetadata"
 	GemMetadataType              MetadataType = "GemMetadata"
 	JavaMetadataType             MetadataType = "JavaMetadata"
 	NpmPackageJSONMetadataType   MetadataType = "NpmPackageJsonMetadata"
@@ -38,6 +39,7 @@ var AllMetadataTypes = []MetadataType{
 	AlpmMetadataType,
 	BinaryMetadataType,
 	DpkgMetadataType,
+	NixStoreMetadataType,
 	GemMetadataType,
 	JavaMetadataType,
 	NpmPackageJSONMetadataType,
