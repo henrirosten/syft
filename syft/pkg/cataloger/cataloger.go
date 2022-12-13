@@ -28,6 +28,7 @@ import (
 	"github.com/anchore/syft/syft/pkg/cataloger/ruby"
 	"github.com/anchore/syft/syft/pkg/cataloger/rust"
 	"github.com/anchore/syft/syft/pkg/cataloger/sbom"
+	"github.com/anchore/syft/syft/pkg/cataloger/nixstore"
 	"github.com/anchore/syft/syft/pkg/cataloger/swift"
 )
 
@@ -50,6 +51,7 @@ func ImageCatalogers(cfg Config) []pkg.Cataloger {
 		portage.NewPortageCataloger(),
 		sbom.NewSBOMCataloger(),
 		binary.NewCataloger(),
+		nixstore.NewNixStoreCataloger(),
 	}, cfg.Catalogers)
 }
 
